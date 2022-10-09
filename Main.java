@@ -38,7 +38,7 @@ public class Main {
                 System.out.println("Вы не ввели правую часть уравнения");
         }
         String temp = ("+" + equation).replaceAll("\\s", "");
-        /*Следующие 4 строки добавляют цифру 1 перед переменными без множителя*/
+        /*Следующие 2 строки добавляют цифру 1 перед переменными без множителя*/
         temp = temp.replaceAll("\\+x", "\\+1x");
         temp = temp.replaceAll("\\-x", "\\-1x");
         double[] variables = new double[3];
