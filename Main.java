@@ -7,9 +7,6 @@ public class Main {
     public static void main(String[] args) {
         double[] variables = VvodDannix();
         double d = D(variables);
-        System.out.println(variables[0]);
-        System.out.println(variables[1]);
-        System.out.println(variables[2]);
         if (variables[0] != 0) {
             if (d > 0) {
                 DBolshe0(variables, d);
@@ -24,8 +21,6 @@ public class Main {
             System.out.println("Не является квадратным уравнением, но вот тебе ответ:");
             System.out.println("X=" + x);
         }
-
-
     }
 
     /*Считывание данных с клавиатуры и добавление всех коифицентов уравнения в однельный массив.*/
@@ -66,13 +61,12 @@ public class Main {
             temp= match.group(1);
             variables+=Double.parseDouble(temp);
         }
-        return (temp.length() == 1) ? (variables + 1) : variables;
+        return variables;
     }
 
     /*Вычисляем дискриминант уравнения*/
     public static double D(double[] intvariables) {
         Double d = (intvariables[1] * intvariables[1]) - (4.0 * intvariables[0] * intvariables[2]);
-        System.out.println("D"+ d);
         return (d);
     }
 
