@@ -41,8 +41,6 @@ public class Main {
         /*Следующие 4 строки добавляют цифру 1 перед переменными без множителя*/
         temp = temp.replaceAll("\\+x", "\\+1x");
         temp = temp.replaceAll("\\-x", "\\-1x");
-        /*temp = temp.replaceAll("\\+x{0}[^\\^]", "\\+1x");
-        temp = temp.replaceAll("\\-x{0}[^\\^]", "\\-1x");*/
         double[] variables = new double[3];
         variables[0]= determineTheCoefficient(temp,"([+-][0-9]*)x\\^2");   //a
         variables[1]= determineTheCoefficient(temp,"([+-][0-9]*)x(?!\\^)");    //b
