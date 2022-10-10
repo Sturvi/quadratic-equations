@@ -74,10 +74,10 @@ public class Main {
             }
 
     /* Вычисление уравнения в случае когда Дискриминант больше 0*/
-    public static void ifDiscriminantGreaterThan0(double[] intvariables, double d) {
+    public static void ifDiscriminantGreaterThan0(double[] variables, double d) {
         double[] x = new double[2];
-        x[0] = (-intvariables[1] + Math.sqrt(d)) / (2 * intvariables[0]);
-        x[1] = (-intvariables[1] - Math.sqrt(d)) / (2 * intvariables[0]);
+        x[0] = (-variables[1] + Math.sqrt(d)) / (2 * variables[0]);
+        x[1] = (-variables[1] - Math.sqrt(d)) / (2 * variables[0]);
         System.out.println("X1= " + x[0]);
         System.out.println("X2= " + x[1]);
     }
