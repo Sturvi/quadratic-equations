@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        double[] variables = imputData();
+        double[] variables = imputData();  //variables[0]=а, variables[1]=b, variables[1]=c
         double d = discriminant(variables);
         if (variables[0] != 0) {
             if (d > 0) {
@@ -22,7 +22,7 @@ public class Main {
         }
     }
 
-    /*Считывание данных с клавиатуры и добавление всех коифицентов уравнения в однельный массив.*/
+    /*Считывание данных с клавиатуры и добавление всех коэффициентов уравнения в однельный массив.*/
     public static double[] imputData() {
         Scanner scan = new Scanner(System.in);
         boolean test=false;
