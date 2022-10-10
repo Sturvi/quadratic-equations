@@ -62,8 +62,8 @@ public class Main {
     }
 
     /*Вычисляем дискриминант уравнения*/
-    public static double discriminant(double[] intvariables) {
-        Double d = (intvariables[1] * intvariables[1]) - (4.0 * intvariables[0] * intvariables[2]);
+    public static double discriminant(double[] variables) {
+        Double d = (variables[1] * variables[1]) - (4.0 * variables[0] * variables[2]);
         return (d);
     }
 
