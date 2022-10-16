@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         double[] variables = imputData();  //variables[0]=а, variables[1]=b, variables[1]=c
         double d = discriminant(variables);
